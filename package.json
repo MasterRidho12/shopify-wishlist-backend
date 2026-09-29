@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Supabase Wishlist API",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --env-file=.env index.js",
+    "dev": "node --env-file=.env index.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0"
